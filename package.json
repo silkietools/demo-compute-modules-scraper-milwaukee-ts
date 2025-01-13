@@ -1,0 +1,28 @@
+{
+  "name": "demo-compute-module-scraper-milwaukee",
+  "version": "0.0.1",
+  "description": "A TypeScript-based web scraper for extracting detailed product information from Milwaukee using Playwright.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "postinstall": "npx playwright install --with-deps",
+    "test": "npx ts-node src/test.ts",
+    "start": "node dist/index.js",
+    "dev": "nodemon index/server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Silkie Tools | dev@silkie.tools",
+  "license": "ISC",
+  "dependencies": {
+    "@palantir/compute-module": "0.2.6",
+    "@sinclair/typebox": "^0.34.12",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.7.2"
+  }
+}
